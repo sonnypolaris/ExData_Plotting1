@@ -29,7 +29,7 @@ plot4 <- function ()
     paste(data[,1], data[,2]), 
     format="%d/%m/%Y %H:%M:%S"),
     data[,5], type="l"
-    , xlab="", ylab="2")
+    , xlab="", ylab="Voltage")
   
   # Row 2, Column 1
   plot(strptime(paste(data[,1], data[,2]), format="%d/%m/%Y %H:%M:%S"),data[,7], type="n", xlab="", ylab="Energy sub meeting")
@@ -48,7 +48,7 @@ plot4 <- function ()
     paste(data[,1], data[,2]), 
     format="%d/%m/%Y %H:%M:%S"),
     data[,4], type="l"
-    , xlab="", ylab="Global_reactive_power")
+    , xlab="datetime", ylab="Global_reactive_power")
   
   #close the PNG device
   dev.off()
